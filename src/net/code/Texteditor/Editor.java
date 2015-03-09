@@ -216,12 +216,7 @@ public class QuteEditor extends Activity {
         return "/";
     }
     
-    private String defaultSaveFilename() {
-    	SimpleDateFormat sdf_day = new SimpleDateFormat("yyyy-MM-dd");
-        SimpleDateFormat sdf_time = new SimpleDateFormat("HH-mm-ss");        
-        Date date = new Date();
-        return sdf_day.format(date) + "-Note-" + sdf_time.format(date) + ".txt";
-    }
+    //removed file name save method
     
     private Uri defaultSaveUri() {
     	Uri.Builder builder = new Uri.Builder();
